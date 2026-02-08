@@ -71,3 +71,5 @@ Early-stage founders often juggle disconnected tools to manage execution, gather
 | Hosting      | Vercel / GitHub Pages / Render           |
 
 ---
+## Preview Link
+https://startup-toolkit-8.preview.emergentagent.com/dashboard
