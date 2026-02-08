@@ -1,0 +1,149 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "StartupOps",
+      "aesthetic": "Apple-Minimalist meets Swiss-Utility",
+      "core_values": ["Clarity", "Precision", "Flow"],
+      "emotional_tone": "Trustworthy, Efficient, Calm"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "google_fonts_import": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap",
+      "scale": {
+        "h1": "text-4xl md:text-5xl font-bold tracking-tight leading-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold tracking-tight",
+        "h4": "text-xl font-medium tracking-normal",
+        "body_lg": "text-lg leading-relaxed text-muted-foreground",
+        "body_base": "text-base leading-relaxed text-foreground",
+        "caption": "text-sm text-muted-foreground tracking-wide uppercase"
+      }
+    },
+    "colors": {
+      "palette_name": "Obsidian & Mist",
+      "light_mode": {
+        "background": "0 0% 100%",
+        "foreground": "240 10% 3.9%",
+        "card": "0 0% 100%",
+        "card_foreground": "240 10% 3.9%",
+        "popover": "0 0% 100%",
+        "popover_foreground": "240 10% 3.9%",
+        "primary": "221 83% 53%", 
+        "primary_foreground": "210 40% 98%",
+        "secondary": "240 4.8% 95.9%",
+        "secondary_foreground": "240 5.9% 10%",
+        "muted": "240 4.8% 95.9%",
+        "muted_foreground": "240 3.8% 46.1%",
+        "accent": "240 4.8% 95.9%",
+        "accent_foreground": "240 5.9% 10%",
+        "destructive": "0 84.2% 60.2%",
+        "destructive_foreground": "0 0% 98%",
+        "border": "240 5.9% 90%",
+        "input": "240 5.9% 90%",
+        "ring": "240 5% 64.9%"
+      },
+      "dark_mode": {
+        "background": "240 10% 3.9%",
+        "foreground": "0 0% 98%",
+        "card": "240 10% 3.9%",
+        "card_foreground": "0 0% 98%",
+        "popover": "240 10% 3.9%",
+        "popover_foreground": "0 0% 98%",
+        "primary": "217 91% 60%",
+        "primary_foreground": "222 47% 11%",
+        "secondary": "240 3.7% 15.9%",
+        "secondary_foreground": "0 0% 98%",
+        "muted": "240 3.7% 15.9%",
+        "muted_foreground": "240 5% 64.9%",
+        "accent": "240 3.7% 15.9%",
+        "accent_foreground": "0 0% 98%",
+        "destructive": "0 62.8% 30.6%",
+        "destructive_foreground": "0 0% 98%",
+        "border": "240 3.7% 15.9%",
+        "input": "240 3.7% 15.9%",
+        "ring": "240 4.9% 83.9%"
+      },
+      "usage_rules": [
+        "NEVER use gradients for text.",
+        "Use 'primary' color ONLY for the main CTA on a page.",
+        "Use 'muted-foreground' for secondary text to reduce visual noise.",
+        "Borders should be subtle (opacity 10-20%)."
+      ]
+    },
+    "layout": {
+      "spacing_scale": "Generous (2x standard)",
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_spacing": "py-16 md:py-24",
+      "grid_system": {
+        "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6",
+        "marketing": "grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12"
+      },
+      "border_radius": {
+        "default": "rounded-xl",
+        "button": "rounded-full",
+        "card": "rounded-xl"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md transition-all duration-300 rounded-full px-8 py-6 font-medium",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full px-6 py-6 font-medium",
+        "ghost": "hover:bg-accent hover:text-accent-foreground rounded-full px-4 py-2"
+      },
+      "cards": {
+        "style": "bg-card text-card-foreground border border-border/50 shadow-sm hover:shadow-md transition-all duration-300",
+        "glass": "bg-background/60 backdrop-blur-xl border border-white/20 shadow-lg"
+      },
+      "inputs": {
+        "style": "h-12 rounded-lg border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+      }
+    },
+    "motion": {
+      "library": "framer-motion",
+      "default_transition": {
+        "type": "spring",
+        "stiffness": 260,
+        "damping": 20
+      },
+      "page_transition": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.3 }
+      }
+    },
+    "assets": {
+      "images": {
+        "hero_bg": "https://images.unsplash.com/photo-1521202850558-0110494d0457?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMHdoaXRlJTIwc2hhcGVzfGVufDB8fHx8MTc3MDUxNjg5OHww&ixlib=rb-4.1.0&q=85",
+        "team_meeting": "https://images.unsplash.com/photo-1758873269317-51888e824b28?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwc3RhcnR1cCUyMHRlYW0lMjBtZWV0aW5nfGVufDB8fHx8MTc3MDUxNjg4OHww&ixlib=rb-4.1.0&q=85",
+        "office_blur": "https://images.unsplash.com/photo-1758208974170-3a3037da0c69?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBvZmZpY2UlMjBpbnRlcmlvciUyMGJsdXJ8ZW58MHx8fHwxNzcwNTE2ODkzfDA&ixlib=rb-4.1.0&q=85",
+        "founder_laptop": "https://images.unsplash.com/photo-1758989388581-4cc5adbff544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBvZmZpY2UlMjBpbnRlcmlvciUyMGJsdXJ8ZW58MHx8fHwxNzcwNTE2ODkzfDA&ixlib=rb-4.1.0&q=85"
+      },
+      "icons": "lucide-react"
+    },
+    "universal_guidelines": [
+      "Do not use gradients for text.",
+      "Do not use 'Inter' for headings. Use 'Manrope'.",
+      "Ensure all interactive elements have 'data-testid'.",
+      "Use 'sonner' for toasts.",
+      "Use 'Shadcn' components for complex interactions (Datepicker, Dialog, etc).",
+      "Never use transparent backgrounds for dropdowns or overlays.",
+      "Always implement Dark/Light mode toggle."
+    ]
+  },
+  "implementation_plan": {
+    "steps": [
+      "Install dependencies: framer-motion, lucide-react, sonner, clsx, tailwind-merge",
+      "Update tailwind.config.js with the new color palette and font families.",
+      "Update index.css with the CSS variables for light/dark mode.",
+      "Create a 'Layout' component that handles the Sidebar/Header structure.",
+      "Implement the 'ThemeToggle' component.",
+      "Build the 'LandingPage' with the 'Hero' section using the abstract background.",
+      "Build the 'Dashboard' using the Bento Grid layout."
+    ]
+  }
+}
